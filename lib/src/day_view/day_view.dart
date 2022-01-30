@@ -282,6 +282,7 @@ class DayViewState<T> extends State<DayView<T>> {
               // _dayTitleBuilder(_currentDate),
               Expanded(
                 child: SingleChildScrollView(
+                  physics: BouncingScrollPhysics(),
                   child: SizedBox(
                     height: _height,
                     child: PageView.builder(
